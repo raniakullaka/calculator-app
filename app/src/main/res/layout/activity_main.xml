@@ -4,24 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#0A0A0A">
+    android:background="#0A0A0A"
+    android:weightSum="3">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="12dp">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="CALC · 001"
-            android:fontFamily="monospace"
-            android:textSize="10sp"
-            android:textColor="#666666" />
-        <TextView
-            android:id="@+id/tvModeLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_con
+        android:text="CALC · 001"
+        android:fontFamily="monospace"
+        android:textSize="10sp"
+        android:textColor="#666666"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wra
